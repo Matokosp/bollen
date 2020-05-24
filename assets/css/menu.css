@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+.main_menu {
+  display: none;
+}
+
+.menu {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background: none;
+    z-index: 99;
+}
+
+.menu__responsive {
+	/* background-color: rgb(249, 249, 249); */
+  width: 100%;
+  height: 60px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.menu__responsive-hide {
+	transition: 0.5s;
+	opacity: 0;
+  transform: translateY(-60px);
+}
+
+.menu__responsive-show {
+	transition: 0.5s;
+  	top: 0px;
+}
+
+.menu__responsive--hidden{
+  width: 250px;
+  left: -255px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  z-index: 50;
+  background: rgb(249, 249, 249);
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.logozooma {
+  width: 60%;
+}
+
+.show{
+  left: 0px;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+}
+
+.menu__responsive-logo {
+  width: 150px;
+}
+
+.menures {
+  text-align: left;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.menures li {
+	margin: 15px 0;
+	padding-left: 10%;
+}
+
+.menures a {
+	font-size: 1rem;
+  color: #000;
+  font-family: 'OrkneyLight', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-separation  {
+	height: 1px;
+	background-color: #000;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.slogan-img {
+	position: absolute;
+	width: 45%;
+	bottom: 30px;
+	left: 27.5%;
+}
+
+.hamburger__section {
+  position: absolute;
+  display: block;
+  left: 25px;
+  top: 20px;
+  z-index: 99;
+  width: 30px;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  text-align: right;
+}
+
+.hamburger__section-icon {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: all .8s cubic-bezier(.19,1,.22,1);
+  border-radius: 15%;
+  /*float: right;*/
+}
+
+.hamburger__section-icon-black {
+  background-color: #000;
+}
+
+.hamburguer-slide {
+  left: 200px;
+}
+
+.menures_right-icon {
+	float: right;
+	margin-top: 12.5px;
+}
+
+.menures_right-icon a {
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+  	font-weight: 700;
+	background-color: #D31F26;
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	padding: 5px;
+	margin-right: 5vw;
+	border-radius: 3px;
+/*	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;*/
+}
+
+.menures_right-icon img {
+	display: inline-block;
+	width: 25px;
+}
+
+@media (min-width: 992px) {
+
+.menu__responsive {
+  display: none;
+}
+
+.main_menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  /* padding: 15px 10px; */
+  text-align: right;
+  background: linear-gradient(180deg,#000 0,transparent);
+}
+
+.corner_logo {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 100px;
+  transition: 0.3s;
+}
+
+.corner_logo img {
+  width: 100%;
+}
+
+.main_menu ul {
+  margin-right: 5vw;
+}
+
+.main_menu ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main_menu-link {
+  font-family: 'OrkneyLight', sans-serif;
+  color: #fff;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  vertical-align: middle;
+}
+
+.main_menu-link-active {
+  font-family: 'OrkneyBold', sans-serif;
+  text-decoration: line-through;
+}
+
+.main_menu ul li a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/*SCROLL BAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 5px grey; */
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+.main_menu {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  text-align: right;
+  padding-top: 15px;
+  background: linear-gradient(180deg,#000 0,transparent);
+  transition: 0.6s;
+}
+
+.main_menu-hide {
+	transition: 0.6s;
+	transform: translateY(-70px);
+}
+
+.main_menu-white {
+	background: #fff;
+}
+
+#menu {
+  z-index: 99;
+}
+
+.corner_logo {
+  top: 25px;
+  left: 40px;
+}
+
+.main_menu ul li a {
+  font-size: 0.65rem;
+}
+
+}
+
+
+
+@media (min-width: 1440px) {
+
+.main_menu ul {
+  margin-right: 2vw;
+}
+
+.main_menu ul li a {
+  font-size: 0.7rem;
+}
+
+}

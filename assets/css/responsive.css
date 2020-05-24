@@ -1,0 +1,29 @@
+/* TABLETS MID RES PORTRAIT */
+
+@media (min-width: 520px) and (orientation: portrait) {
+
+  .proyects_section {
+    flex-direction: row;
+  }
+
+  .proyect_item {
+    width: 50%;
+    height: 50vw;
+  }
+
+}
+
+/* LAPTOP STYLE */
+
+@media (min-width: 1100px) and (orientation: landscape) {
+
+  .proyects_section {
+    flex-direction: row;
+  }
+
+  .proyect_item {
+    height: auto;
+    flex: 0 0 33.3%;
+  }
+
+}
