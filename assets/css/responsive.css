@@ -2,6 +2,26 @@
 
 @media (min-width: 520px) and (orientation: portrait) {
 
+  /* HOME */
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_title {
+    text-align: right;
+    width: 35%;
+  }
+
+  .header_description {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+
+  /* PROYECTS SECTION */
+
   .proyects_section {
     flex-direction: row;
   }
@@ -11,19 +31,274 @@
     height: 50vw;
   }
 
+  /* BANNER */
+
+  .banner_section {
+    padding: 60px 15vw;
+  }
+
+  .banner_section p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  /* FOOTER */
+
+  .footer_info {
+    flex-direction: row;
+  }
+
+  .footer_item {
+    width: 33%;
+  }
+
 }
 
 /* LAPTOP STYLE */
 
 @media (min-width: 1100px) and (orientation: landscape) {
 
+  .laptop {
+    display: block;
+  }
+
+  .laptop_menu_logo_div {
+    position: fixed;
+    z-index: 50;
+    width: 200px;
+    top: 80px;
+    left: 100px;
+    z-index: 55;
+  }
+
+  .laptop_menu_logo {
+    width: 100%;
+  }
+
+  /* MENU */
+
+  .hamburger_div {
+    display: none;
+  }
+
+  /* menu hidden */
+
+  .menu {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+    height: 250px;
+    width: 100vw;
+    flex-direction: row;
+    transform: translateX(0vw);
+    transition: 0.4s;
+    justify-content: flex-end;
+    padding: 0 5vw;
+  }
+
+  .menu-link {
+    font-size: 1.2rem;
+    width: 10%;
+    text-align: center;
+  }
+
+  .instagram_menu {
+    width: 80px;
+  }
+
+  .instagram_menu img {
+    width: 100%;
+  }
+
+
+  /* HOME */
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+  }
+
+  .header_home {
+    background-image: url('../images/header-bkg.jpg');
+  }
+
+  .header_somos {
+    background-image: url('../images/header-somos-bkg.jpg');
+  }
+
+  .header_title {
+    text-align: right;
+    width: 30%;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+
+  .header_description {
+    width: 60%;
+    font-size: 1.8rem;
+  }
+
+  /* PROYECTS SECTION */
+
   .proyects_section {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
   }
 
   .proyect_item {
     height: auto;
-    flex: 0 0 33.3%;
+    flex: 0 0 31%;
+    /* padding: 20px; */
   }
+
+  .proyect_item_overlay {
+    visibility: hidden;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    transition: 0.4s;
+    padding: 0 12%;
+    text-align: center;
+  }
+
+  .proyect_item:hover .proyect_item_overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .proyect_overlay_category {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .proyect_overlay_title {
+    font-size: 1.6rem;
+  }
+
+
+  /* BANNER */
+
+  .banner_section {
+    padding: 60px 20vw;
+  }
+
+  .banner_section p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  /* FOOTER */
+
+  .footer_info {
+    flex-direction: row;
+  }
+
+  .footer_item {
+    width: 33%;
+  }
+
+  .footer_copyright {
+    font-size: 0.8rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* SOMOS PAGE */
+  /* --------------------------------------------------- */
+
+  .header_somos .header_title {
+    text-align: right;
+    width: 35%;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+
+  .header_somos .header_description {
+    width: 60%;
+    font-size: 2.2rem;
+  }
+
+  .somos_section {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px 0;
+  }
+
+  .profile {
+    width: 45%;
+    padding: 0 5%;
+  }
+
+  .profile_text {
+    padding: 0;
+  }
+
+  .profile_description {
+    width: 55%;
+    padding-right: 5%;
+    margin: 0;
+    position: relative;
+  }
+
+  .profile_description p {
+    font-size: 1.1rem;
+  }
+
+  .contactanos {
+    position: absolute;
+    width: 30%;
+    right: 5%;
+    bottom: 0;
+  }
+
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+
+  /* HOME */
+
+  .header {
+    padding: 0 20vw;
+  }
+
+  .header_title {
+    text-align: right;
+    width: 25%;
+    font-size: 1.1rem;
+    line-height: 2.8rem;
+  }
+
+  .header_description {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  /* PROYECTS SECTION */
+
+  .proyects_section {
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+
+  /* BANNER */
+
+  .banner_section {
+    padding: 60px 25vw;
+  }
+
+  .banner_section p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
 
 }
