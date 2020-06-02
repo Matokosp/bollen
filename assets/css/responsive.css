@@ -52,6 +52,24 @@
     width: 33%;
   }
 
+  /* PROYECT PAGE */
+
+  .proyect_brief_title {
+    font-size: 2rem;
+  }
+
+  .proyect_square {
+    display: flex;
+    flex-direction: row;
+    padding: -5px 0;
+    justify-content: space-between;
+  }
+
+  .proyect_square img {
+    width: 49.4%;
+  }
+
+
 }
 
 /* LAPTOP STYLE */
@@ -120,6 +138,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 15vw;
+    width: 100%;
   }
 
   .header_home {
@@ -140,6 +159,11 @@
   .header_description {
     width: 60%;
     font-size: 1.8rem;
+  }
+
+  .next_section h5 {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
   }
 
   /* PROYECTS SECTION */
@@ -260,6 +284,59 @@
     bottom: 0;
   }
 
+  /* PROYECTS PAGE */
+
+  .proyect_header {
+    height: calc(var(--vh, 1vh) * 75);
+    background-attachment: fixed;
+  }
+
+  .proyect_container {
+    margin: 0 auto;
+    padding: 10vh 5vw 150px 5vw;
+    max-width: 1700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .proyect_brief {
+    width: 30%;
+  }
+
+  .proyect_description {
+    width: 60%;
+    margin: 0;
+  }
+
+  .proyect_brief_title {
+    font-size: 2rem;
+    font-family: 'SarabunSemiBold', sans-serif;
+  }
+
+  .proyect_gallery {
+    max-width: 1700px;
+    padding: 0 5vw;
+  }
+
+  .proyect_square {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .proyect_square img {
+    width: 49.5%;
+    padding: 5px 0;
+  }
+
+
+  /* PROYECT BACK SECTION */
+
+  .proyect_back a h5 {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.2rem;
+  }
+
 }
 
 @media (min-width: 1440px) and (orientation: landscape) {
@@ -298,6 +375,13 @@
   .banner_section p {
     font-size: 1.4rem;
     line-height: 2.2rem;
+  }
+
+  /* PROYECTS PAGE */
+
+  .proyect_header {
+    height: calc(var(--vh, 1vh) * 85);
+    background-attachment: fixed;
   }
 
 
