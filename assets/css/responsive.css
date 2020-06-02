@@ -87,10 +87,17 @@
     top: 80px;
     left: 100px;
     z-index: 55;
+    transition: 0.4s;
   }
 
   .laptop_menu_logo {
     width: 100%;
+  }
+
+  .laptop_menu_logo_div_shrink {
+    width: 100px;
+    top: 30px;
+    left: 50px;
   }
 
   /* MENU */
@@ -120,14 +127,31 @@
     font-size: 1.2rem;
     width: 10%;
     text-align: center;
+    transition: 0.4s;
   }
 
   .instagram_menu {
     width: 80px;
+    transition: 0.4s;
   }
 
   .instagram_menu img {
     width: 100%;
+  }
+
+  /* menu small */
+
+  .menu_shrink {
+    height: 100px;
+    background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+  }
+
+  .menu-link_shrink {
+    font-size: 0.8rem;
+  }
+
+  .instagram_menu_shrink {
+    width: 50px;
   }
 
 
