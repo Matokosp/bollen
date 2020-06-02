@@ -178,11 +178,27 @@
     width: 30%;
     font-size: 1.1rem;
     line-height: 2.2rem;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1s;
+  }
+
+  .header-from-left {
+    transform: translateX(0px);
+    opacity: 1;
   }
 
   .header_description {
     width: 60%;
     font-size: 1.8rem;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+  }
+
+  .header-from-right {
+    transform: translateX(0px);
+    opacity: 1;
   }
 
   .next_section h5 {

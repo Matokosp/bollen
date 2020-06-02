@@ -95,54 +95,13 @@ $('a[href^="#"]').on('click', function(event) {
             $('.instagram_menu').removeClass('instagram_menu_shrink');
             $('.laptop_menu_logo_div').removeClass('laptop_menu_logo_div_shrink');
           }
-  //
-  //         if($(window).scrollTop() >= sectionThree.top - 100) {
-  //           $('.menu').children('a:nth-child(1)').removeClass('menu-active');
-  //           $('.menu').children('a:nth-child(2)').addClass('menu-active');
-  //           $('.menu').children('a:nth-child(3)').removeClass('menu-active');
-  //         }
-  //
-  //         if($(window).scrollTop() >= sectionFour.top - 100) {
-  //           $('.menu').children('a:nth-child(2)').removeClass('menu-active');
-  //           $('.menu').children('a:nth-child(3)').addClass('menu-active');
-  //           $('.menu').children('a:nth-child(4)').removeClass('menu-active');
-  //         }
-  //
-  //         if($(window).scrollTop() >= sectionFive.top - 200) {
-  //           $('.menu').children('a:nth-child(3)').removeClass('menu-active');
-  //           $('.menu').children('a:nth-child(4)').addClass('menu-active');
-  //           $('.menu').children('a:nth-child(5)').removeClass('menu-active');
-  //         }
-  //
-        })
-  //
-  //
-			// $(window).scroll(function(){
-			// 	if ( $(window).scrollTop() >= sectionOne.top + 300) {
-      //     // ABAJO
-      //         $('.laptop_menu_logo-white').addClass('logo-hide');
-      //         $('.laptop_menu_logo_div').addClass('logo-small');
-      //         $('.menu').addClass('menu-scroll');
-      //         $('.menu-link').addClass('menu-link-scroll');
-			//     } else {
-      //       // ARRIBA
-      //       $('.laptop_menu_logo-white').removeClass('logo-hide');
-      //       $('.laptop_menu_logo_div').removeClass('logo-small');
-      //       $('.menu').removeClass('menu-scroll');
-      //       $('.menu-link').removeClass('menu-link-scroll');
-			//     }
-			// })
-      //
-      // $(window).on('load', function(){
-      //   if ( $(window).scrollTop() >= sectionOne.top + 300) {
-      //     // ABAJO
-      //         $('.laptop_menu_logo-white').addClass('logo-hide');
-      //         $('.laptop_menu_logo_div').addClass('logo-small');
-      //         $('.menu').addClass('menu-scroll');
-      //         $('.menu-link').addClass('menu-link-scroll');
-			//     }
-      // })
 
+        })
+
+          $(window).on('load', function(){
+            $('.header_title').addClass('header-from-left');
+            $('.header_description').addClass('header-from-right');
+          })
 		}
 	}
 
